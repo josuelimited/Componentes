@@ -1,0 +1,76 @@
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+}
+
+:root {
+    --color-fondocontenedor: white; /* Define una variable para el color de fondo del contenedor principal */
+    --color-fondoformulario: white; /* Define una variable para el color de fondo del formulario */
+    --color-tituloformulario: #2c3e50; /* Define una variable para el color del título del formulario */
+    --color-botton: rgb(51, 196, 51); /* Define una variable para el color del botón */
+}
+
+.container {
+    max-width: 1200px; /* Establece un ancho máximo de 1200px para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background: var(--color-fondocontenedor); /* Aplica el color de fondo del contenedor definido en la variable */
+    padding: 40px; /* Añade un padding de 40px alrededor del contenido del contenedor */
+    border-radius: 12px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al contenedor */
+}
+
+.formulario {
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    max-width: 500px; /* Establece un ancho máximo de 500px para el formulario */
+    background: var(--color-fondoformulario); /* Aplica el color de fondo del formulario definido en la variable */
+    padding: 20px; /* Añade un padding de 20px dentro del formulario */
+    border-radius: 8px; /* Redondea las esquinas del formulario */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al formulario */
+}
+
+.formulario__titulo {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 15px; /* Añade un margen inferior de 15px al título */
+    color: var(--color-tituloformulario); /* Aplica el color del título definido en la variable */
+}
+
+.formulario__grupo {
+    margin-bottom: 15px; /* Añade un margen inferior de 15px a cada grupo de formulario */
+}
+
+.formulario__label {
+    display: block; /* Hace que la etiqueta se comporte como un bloque, ocupando todo el ancho disponible */
+    margin-bottom: 5px; /* Añade un margen inferior de 5px a la etiqueta */
+    font-size: 18px; /* Establece el tamaño de la fuente de la etiqueta a 18px */
+    font-weight: bold; /* Establece el peso de la fuente de la etiqueta a negrita */
+    color: var(--color-tituloformulario); /* Aplica el color del título definido en la variable */
+}
+
+.formulario__input,
+.formulario__texarea {
+    width: 100%; /* Establece el ancho de los inputs y textarea al 100% del contenedor */
+    padding: 10px; /* Añade un padding de 10px dentro de los inputs y textarea */
+    border: 1px solid #ddd; /* Establece un borde gris claro alrededor de los inputs y textarea */
+    font-size: 14px; /* Establece el tamaño de la fuente a 14px */
+}
+
+.formulario__texarea {
+    height: 100px; /* Establece una altura fija de 100px para el textarea */
+}
+
+.formulario__boton {
+    width: 100%; /* Establece el ancho del botón al 100% del contenedor */
+    padding: 10px; /* Añade un padding de 10px dentro del botón */
+    color: white; /* Establece el color del texto del botón a blanco */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Establece el tamaño de la fuente del botón a 16px */
+    background-color: var(--color-botton); /* Aplica el color de fondo del botón definido en la variable */
+}
+
+.formulario__boton:hover {
+    transition: 0.2s; /* Establece una transición suave de 0.2 segundos al pasar el mouse sobre el botón */
+    background-color: cadetblue; /* Cambia el color de fondo del botón a cadetblue al pasar el mouse */
+}

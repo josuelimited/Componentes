@@ -1,0 +1,20 @@
+.nav
+{
+    background-color: #bec2be;
+    padding: 15px;
+    padding-bottom: 1px;
+}
+a
+{
+    text-decoration: none;
+    padding: 30px;
+}
+.header__nav-link
+{
+  font-size: 20px;
+  border-bottom: 3px solid #abb1ab;
+}
+.nav-cel
+{
+  margin-left: 1000px;
+}

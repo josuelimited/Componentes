@@ -1,0 +1,25 @@
+* { /* Selector universal: aplica a todos los elementos */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+
+.piepagina { /* Contenedor principal del pie de página */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    border: 2px solid rgba(155, 16, 16, 0.082); /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Lo posiciona en la parte más baja */
+    padding: 10px; /* Espaciado interno */
+    background-color: rgb(219, 153, 11); /* Color de fondo*/
+    text-align: center; /* Centra el texto */
+}
+
+.piepagina__derechosautor{ /* Texto de copyright */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+.piepagina__link { /* Enlaces en el pie de página */
+    display: inline-block; /* Muestra en línea pero permite dimensiones */
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 40px; /* Espacio a la izquierda entre enlaces */
+}

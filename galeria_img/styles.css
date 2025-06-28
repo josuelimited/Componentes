@@ -1,0 +1,69 @@
+* {
+
+    /* Elimina el margen predeterminado de todos los elementos. */
+    margin: 0;
+
+    /* Elimina el relleno predeterminado de todos los elementos. */
+    padding: 0;
+
+    /* Asegura que el relleno y el borde se incluyan en el ancho y alto total del elemento, facilitando el diseño. */
+    box-sizing: border-box;
+}
+
+.galeria {
+
+    /* Establece el color de fondo del contenedor de la galería a blanco puro (usando valores RGB). */
+    background: rgb(255, 255, 255);
+
+    /* Agrega un relleno de 20 píxeles alrededor del contenido dentro del contenedor de la galería, creando espacio entre el borde y el contenido. */
+    padding: 20px;
+    
+    /* Redondea las esquinas del contenedor de la galería con un radio de 8 píxeles, suavizando sus bordes. */
+    border-radius: 8px;
+}
+.galeria__cuadricula{
+    padding: 2em; /* Espacio interiror usando em*/
+    max-width: 1200px; /*Ancho relativo al viewport 95% del ancho del navegador */
+    min-height: 100vh; /* minimo alto igual al alto total del navegador*/
+    font-size: 1rem; /* tamaño base de fuente para  heredad con rem */
+    margin: auto; /*  margen alrededor de la galeria usando rem */
+     text-align: center;   /*Centra el contenido */
+}
+
+.galeria__img{
+    border: 3px solid #a8a8a8;  /* Aplica un borde de 3 pixeles con color gris */ 
+    border-radius: 10px; /* Redondea las esquinas del borde con un radio de 10 pixeles*/ 
+    padding: 15px; /* Agrega un espacio internode 15 pixeles entre el borde y el contenido del elemento*/ 
+    width: 300px; /* Define un ancho fijo de 300 pixeles para el elemento*/
+    height: 350px; /* Define una altura fija de 350 pixeles para el elemento*/
+    text-align: center; /* centra horizontalmente el contenido de texto dentro del elemento*/
+    background-color: #726565; /*Establece un color de fondo gris muy claro*/
+    display: inline-block; /* permite que el elemento se comporte como bloque pero en linea con otros elementos*/
+    margin-bottom: 20px; /* Agrega un espacio externo de 20 pixxeles debajo del elemento*/
+    margin-left: 20px; /* Agrega un espacio externo de 20 pixeles a la izquierda del elemento*/
+    margin-top: 20px; /*Agrega un espacio externo de 20 pixeles arriba del elemento */
+    object-fit: contain; /*Hace que el contenido como una imagen o video se ajuste completamente del contenedor manteniendo su proporcion original. no se recortanada pero puede quedar espacio vacio  */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el ratón sobre el elemento. */
+}
+
+.galeria__img:hover {
+    /* Define la duración de la transición para las propiedades que cambien. */
+    transition: 0.2s;
+    /* Cambia el color de fondo a bisque cuando el elemento es sobrevolado. */
+    background-color: bisque;
+    /* Define la duración de la transición para *todas* las propiedades que cambien. */
+    /* Nota: Tener dos propiedades 'transition' seguidas puede causar que la segunda sobrescriba a la primera o cree un comportamiento inesperado. */
+    /* Se recomienda combinar las transiciones si se aplican a las mismas propiedades. */
+    transition: all 0.3s;
+    /* Aumenta el tamaño del elemento en un 5% (1.05 veces su tamaño original) cuando es sobrevolado. */
+    transform: scale(1.05);
+}
+
+.gallery__subtitulo {
+    /* Hace que el texto del subtítulo sea negrita. */
+    font-weight: bold;
+    /* Establece el color del texto del subtítulo a naranja. */
+    color: orange;
+    /* Define el tamaño de la fuente del subtítulo a 30 píxeles. */
+    font-size: 30px;
+}

@@ -1,0 +1,113 @@
+*{
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+:root{
+/* Definición de variables globales utilizando :root */
+    /* Color principal para el texto del sitio (gris oscuro) */
+    --color-texto: #04929c;
+    /* Color de fondo general del body (gris claro) */
+    --color-fondobody: #f0f0f0;
+    /* Color de fondo para el encabezado de la página (blanco) */
+    --color-encabezadopagina: #ffffff;
+    /* Color de fondo de los botones (gris oscuro) */
+    --color-botonfondo: #8b10aa;
+    /* Color del texto dentro de los botones (blanco) */
+    --color-textoboton: #fff;
+}
+body {
+    background-color:var(--color-fondobody); /* Establece un color de fondo gris claro para la página */
+    color:var(--color-texto); /* Define el color de texto por defecto a un gris oscuro */
+    font-family: 'Inter', sans-serif; /* Define la fuente principal y una de respaldo */
+}
+
+.encabezado-pagina {
+    /* Aplica el color de fondo definido en la variable --color-encabezadopagina (generalmente blanco) */
+    background-color: var(--color-encabezadopagina);
+    padding: 1rem 2rem; /* Espaciado interno: 1rem arriba/abajo y 2rem a los lados */
+    text-align: center;/* Centra horizontalmente el contenido del encabezado */
+    border-bottom: 1px solid #eee;  /* Borde inferior delgado y gris claro (#eee) para separar visualmente el encabezado */
+    position: relative; /* Posiciona el elemento relativamente para que elementos hijos con position absoluta se posicionen respecto a este */
+    min-height: 60px;  /* Altura mínima del encabezado para asegurar que tenga al menos 60px de alto */
+}
+
+.encabezado-pagina__titulo {
+    margin: 0; /* Elimina el margen por defecto del título h1 */
+    color: var(--color-texto); /* Color del texto del título */
+    font-size: 22px; /* Tamaño de la fuente del título */
+}
+
+
+.principal {
+    padding: 2rem; /* Espaciado interno generoso para la sección principal */
+    text-align: center; /* Centra horizontalmente todo el contenido en línea (texto, botones) */
+}
+
+.principal__boton {
+    background-color:var(--color-botonfondo);/* Color de fondo oscuro para el botón */
+    color: var(--color-textoboton); /* Color del texto blanco para contraste */
+    border: none; /* Elimina el borde por defecto del botón */
+    padding: 1rem 2rem; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de la fuente del texto del botón */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Elimina el subrayado si se usa en una etiqueta <a> */
+    border-radius: 50px; /* Bordes completamente redondeados para un aspecto de píldora */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    display: inline-block; /* Permite aplicar alto/ancho respetando el flujo del texto */
+}
+
+.notificacion {
+    position: fixed; /* Fija la posición relativa a la ventana del navegador */
+    top: 0; /* Lo alinea en la parte superior */
+    left: 0; /* Lo alinea en la parte izquierda */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+    display: none; /* Lo oculta por defecto */
+    opacity: 0; /* Lo hace completamente transparente por defecto */
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out; /* Define una transición suave para la visibilidad */
+}
+
+.notificacion:target {
+    display: block; /* Muestra el elemento cuando es el objetivo de la URL */
+    opacity: 1; /* Lo hace completamente opaco */
+}
+
+.notificacion__contenido {
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    color: #333; /* Texto oscuro para el contenido */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 15px; /* Bordes ligeramente redondeados */
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    max-width: 500px; /* Ancho máximo para evitar que sea demasiado grande en pantallas anchas */
+    position: relative; /* Posición relativa para permitir el centrado con transform */
+    top: 50%; /* Lo mueve hacia abajo el 50% de la altura del padre */
+    left: 50%; /* Lo mueve hacia la derecha el 50% del ancho del padre */
+    transform: translate(-50%, -50%); /* Lo desplaza hacia atrás la mitad de su propio tamaño para centrarlo perfectamente */
+    text-align: center; /* Centra el texto dentro del contenido */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Añade una sombra sutil para darle profundidad */
+}
+
+.notificacion__titulo {
+    margin-top: 0; /* Elimina el margen superior */
+    font-size: 1.8rem; /* Tamaño de fuente grande para el título */
+    color: #333; /* Color del texto del título */
+}
+
+.notificacion__texto {
+    font-size: 1.1rem; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin-bottom: 2rem; /* Margen inferior para separarlo del botón */
+}
+
+.notificacion__cerrar {
+    background-color: #eee; /* Fondo gris claro para el botón de cerrar */
+    color: #333; /* Texto oscuro */
+    border: none; /* Sin borde */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 50px; /* Bordes completamente redondeados */
+    cursor: pointer; /* Cursor de mano para indicar que es clickeable */
+}

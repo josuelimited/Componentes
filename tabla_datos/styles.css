@@ -1,0 +1,60 @@
+body {
+    background: #f8fafd; /* Color de fondo muy claro */
+    font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes principal */
+    color: #222; /* Color de texto principal */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+.tabla-datos__encabezado {
+    background: #003bdf; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 18px 0 18px 32px; /* Espaciado interno: arriba/abajo 18px, izquierda 32px */
+    border-radius: 0 0 12px 12px; /* Bordes redondeados solo abajo */
+    margin-bottom: 24px; /* Espacio inferior */
+}
+
+/* Título del encabezado de la tabla */
+.tabla-datos__titulo {
+    display: inline-block; /* Permite ajustar el ancho al contenido */
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0; /* Sin margen */
+}
+
+.tabla-datos__principal {
+    padding: 24px; /* Espaciado interno */
+    display: block; /* Ocupa todo el ancho disponible */
+}
+.tabla-datos__tabla {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 900px; /* Ancho máximo de la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 12px rgba(30,41,59,0.08); /* Sombra sutil */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.tabla-datos__cabecera th {
+    background: #003bdf; /* Fondo azul intermedio */
+    color: #fff; /* Texto blanco */
+    padding: 14px 8px; /* Espaciado interno */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    border-bottom: 2px solid #1e293b; /* Línea inferior azul oscuro */
+}
+
+.tabla-datos__cuerpo td {
+    padding: 12px 8px; /* Espaciado interno */
+    border-bottom: 1px solid #e2e8f0; /* Línea inferior gris claro */
+    text-align: center; /* Centra el texto */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+}
+
+.tabla-datos__fila:last-child td {
+    border-bottom: none; /* Elimina la línea inferior en la última fila */
+}
+
+.tabla-datos__celda--th {
+    font-weight: bold; /* Texto en negrita */
+}

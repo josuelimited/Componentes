@@ -1,0 +1,83 @@
+
+* {
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+}
+:root{
+    --color-pestaña1:#298288;/*Define una variable para el fondo de la pestaña1*/
+    --color-pestaña2:#82fc8e;/*Define una variable para el fondo de la pestaña2*/
+    --color-pestaña3:#dc6aff;/*Define una variable para el fondo de la pestaña3*/
+}
+.header {
+    background-color: rgb(67, 69, 71); /* Fondo gris oscuro para el encabezado */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /*Se centra el contenido*/
+    height: 80px; /*se le da una altura absosulta de 80px*/
+}
+
+/* E - ELEMENTO: Enlace del encabezado */
+.tabs__header-link {
+    text-decoration: none;/* Quita el subrayado del enlace */
+    border: 1px solid black;/* Aplica un borde negro de 1px alrededor */
+    color: rgb(0, 0, 0);/* Establece el color del texto a negro */
+    padding: 8px;/* Espaciado interno de 8px en todos los lados */
+    float: left;/* Hace que el enlace flote a la izquierda */
+    margin-left: 20px;/* Espacio a la izquierda del elemento de 20px */
+    margin-top: 20px;/* Espacio en la parte superior de 20px */
+    border-radius: 5px;/* Bordes redondeados con radio de 5px */
+}
+
+.tabs__header-title {
+    position: relative;/* Permite mover el elemento sin sacarlo del flujo */
+    top: 50px;/* Mueve el título 50px hacia abajo desde su posición original */
+    left: 10px;/* Mueve el título 10px hacia la derecha desde su posición original */
+}
+
+
+.tabs__nav {
+    text-align: center; /* Centra los enlaces de las pestañas */
+    margin: 24px 0 16px 0; /* Espaciado vertical */
+}
+.tabs__nav-link {
+    display: inline-block; /* Muestra los enlaces en línea */
+    padding: 10px 24px; /* Espaciado interno */
+    background: #e2e8f0; /* Fondo gris claro */
+    color: #222; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados arriba */
+    margin: 0 4px; /* Espacio horizontal entre pestañas */
+    font-weight: bold; /* Texto en negrita */
+    transition: background 0.2s, color 0.2s;
+}
+.tabs__nav-link:hover {
+    background: #17ecd0; /* Fondo más oscuro al pasar el mouse */
+}
+
+.tabs__panel {
+    text-align: center; /* Se centra el contenido*/
+    display: none; /* Oculta todos los paneles por defecto */
+    background: #fff; /* Fondo blanco */
+    border-radius: 0 0 8px 8px; /* Bordes redondeados abajo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra sutil */
+    padding: 24px; /* Espaciado interno */
+    margin-top: -4px; /* Superpone el panel con las pestañas */ 
+}
+
+/* Mostrar el panel activo usando :target */
+.tabs__panel:target {
+    display: block; /*ocupa todo el ancho disponible*/
+}
+
+.tabs__nav-link {
+    background: #f85a5a; /* Fondo a las pestañas de navegacion*/
+    color: #222; /* se le da un color al texto*/
+}
+.tabs__panel--uno { 
+    background:var(--color-pestaña1); /* Fondo rosado claro para el panel 1 */
+}
+.tabs__panel--dos { 
+    background: var(--color-pestaña2); /* Fondo verde claro para el panel 2 */ 
+}
+.tabs__panel--tres { 
+    background: var(--color-pestaña3); /* Fondo azul claro para el panel 3 */ 
+}

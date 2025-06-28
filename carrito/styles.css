@@ -1,0 +1,40 @@
+* {
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+
+body {
+    font-family: sans-serif; /* Fuente sin serifas */
+    background-color: #f8fafd; /* Fondo azul muy claro */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+.resumen-carrito {
+    max-width: 400px; /* Ancho máximo */
+    margin: 40px auto; /* Centrado y espacio vertical */
+    padding: 20px; /* Espaciado interno */
+    background: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra sutil */
+}
+
+.resumen-carrito__titulo {
+    font-size: 1.3em; /* Tamaño de fuente */
+    margin-bottom: 12px; /* Espacio inferior */
+    color: #08ff1c; /* verde */
+    text-align: center; /* Centra el texto */
+}
+
+.resumen-carrito__item {
+    margin-bottom: 10px; /* Espacio inferior */
+    color: #333; /* Gris oscuro */
+}
+
+.resumen-carrito__total {
+    font-weight: bold; /* Negrita */
+    color: #08ff1c; /* verde */
+    margin-top: 16px; /* Espacio superior */
+    text-align: right; /* Alinea a la derecha */
+}

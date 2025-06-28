@@ -1,0 +1,60 @@
+* {
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+
+body {
+    font-family: sans-serif;/* Fuente general del sitio, sin serifas (limpia y moderna) */
+    background-color: #f8fafd;/* Color de fondo claro azulado */
+    color: #333;/* Color del texto principal (gris oscuro) */
+}
+
+.blog {
+    max-width: 600px;/* Ancho máximo de la sección del blog */
+    margin: 40px auto;/* 40px arriba y abajo, centrado horizontalmente */
+    padding: 20px;/* Espacio interno de 20px en todos los lados */
+}
+
+.blog__publicacion {
+    background: #fff;/* Fondo blanco para cada publicación */
+    border: 1px solid #ccc;/* Borde gris claro de 1px */
+    border-radius: 8px;/* Bordes redondeados de 8px */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);/* Sombra ligera para dar profundidad */
+    padding: 24px 18px;/* Espaciado interno: 24px arriba/abajo, 18px lados */
+}
+
+.blog__titulo {
+    font-size: 1.7em;/* Tamaño grande para el título (1.7 veces el tamaño base) */
+    margin-bottom: 10px;/* Separación inferior del título */
+    color: #e65806;/* Color naranja fuerte para destacar el título */
+    text-align: center;/* Centra el texto horizontalmente */
+}
+
+.blog__meta {
+    font-size: 0.95em;/* Tamaño de letra ligeramente más pequeño que el normal */
+    color: #888;/* Color gris claro para metadatos (fecha, autor, etc.) */
+    margin-bottom: 18px;/* Espacio inferior con respecto al contenido siguiente */
+    text-align: center;/* Centrado horizontal */
+}
+
+.blog__parrafo {
+    margin-bottom: 16px;/* Espacio debajo de cada párrafo */
+    line-height: 1.6;/* Altura entre líneas para mejorar legibilidad */
+}
+
+.blog__volver {
+    display: inline-block;/* Permite aplicar padding y márgenes como si fuera un bloque */
+    background-color: #4a5568;/* Fondo gris azulado oscuro */
+    color: #fff;/* Texto blanco */
+    padding: 8px 16px;/* Espaciado interno: 8px arriba/abajo, 16px lados */
+    text-decoration: none;/* Quita el subrayado del enlace */
+    border-radius: 5px;/* Bordes redondeados */
+    font-size: 14px;/* Tamaño de letra pequeño */
+    margin-top: 10px;/* Separación desde el elemento superior */
+    transition: background-color 0.2s ease; /* Transición suave al pasar el mouse */
+}
+
+.blog__volver:hover {
+    background-color: #2d3748;/* Color de fondo más oscuro al pasar el cursor */
+}
