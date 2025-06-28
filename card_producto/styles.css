@@ -1,0 +1,60 @@
+body
+{
+    background-color: #eff15b;
+    font-family: Arial, sans-serif;
+}   
+.card  
+{
+    background-color: #fdfdf6;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-left: 700px; 
+    margin-top: 120px;
+    padding-bottom: 170px; ;
+    
+    border: #def799 5px solid;
+   
+}
+.card__img
+{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 400px;
+    height: 300px;
+    
+}
+.card__titulo
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #bb1111;
+    text-align: center;
+    margin-top: 20px;
+}
+.card__contenido
+{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.card__boton
+{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto;
+    background-color: #bb1111;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.card__boton:hover
+{
+    background-color: rgb(57, 120, 255);
+
+}
